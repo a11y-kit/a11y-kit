@@ -1,17 +1,26 @@
 const fs = require('fs-extra')
 const path = require('path')
 
-const PROJECT_ROOT = path.resolve(__dirname, '..')
+const DOCS_ROOT = path.resolve(__dirname, '..', 'docs')
 
-const DOCS_ROOT = path.resolve(PROJECT_ROOT, 'docs')
+const DOCS_DIST = path.join(DOCS_ROOT, 'dist')
+const DOCS_SRC = path.resolve(DOCS_ROOT, 'src')
 
-const VUE_STORYBOOK_PATH = path.resolve(
-  PROJECT_ROOT,
-  'sites',
-  'vue-storybook',
-  'dist'
+// Clean out dist
+if (fs.existsSync(DOCS_DIST)) {
+  fs.emptyDirSync(DOCS_DIST)
+} else {
+  fs.mkdirpSync(DOCS_DIST)
+}
+
+// Copy homepage placeholder
+fs.copySync(
+  path.resolve(DOCS_SRC, 'index.html'),
+  path.resolve(DOCS_DIST, 'index.html')
 )
 
-const DOCS_PATH_VUE_STORYBOOK = path.resolve(DOCS_ROOT, 'vue-storybook')
-fs.emptyDir(DOCS_PATH_VUE_STORYBOOK)
-fs.copySync(VUE_STORYBOOK_PATH, DOCS_PATH_VUE_STORYBOOK)
+// Copy vue storybook
+fs.copySync(
+  path.resolve(DOCS_SRC, 'vue-storybook', 'dist'),
+  path.resolve(DOCS_DIST, 'vue-storybook')
+)

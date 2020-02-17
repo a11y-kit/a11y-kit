@@ -8,9 +8,9 @@
   ],
   "main": "index.js",
   "scripts": {
-    "build-docs": "npm run build-vue-storybook && npm run assemble-docs",
-    "build-vue-storybook": "cd ./sites/vue-storybook && npm run build-storybook",
-    "assemble-docs": "node ./bin/assemble-docs.js"
+    "build-docs": "npm run build-docs:vue-storybook && npm run build-docs:assemble",
+    "build-docs:vue-storybook": "cd ./docs/src/vue-storybook && npm i && npm run build",
+    "build-docs:assemble": "node ./bin/assemble-docs.js"
   },
   "author": {
     "name": "Josh Stabback",
