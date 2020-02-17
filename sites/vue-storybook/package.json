@@ -8,7 +8,7 @@
   "main": "lib/vue-storybook.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/a11y-kit/a11y-kit.git",
+    "url": "https://github.com/a11y-kit/a11y-kit.git"
   },
   "directories": {
     "lib": "lib",
@@ -26,11 +26,12 @@
     "build-storybook": "build-storybook -o ./dist"
   },
   "dependencies": {
-
+    "@a11y-kit/vue-tabs": "file:../../packages/vue-tabs"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@storybook/addon-a11y": "^5.3.13",
+    "@storybook/addon-storysource": "^5.3.13",
     "@storybook/addons": "^5.3.13",
     "@storybook/vue": "^5.3.13",
     "babel-loader": "^8.0.6",

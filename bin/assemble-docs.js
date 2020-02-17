@@ -12,4 +12,6 @@ const VUE_STORYBOOK_PATH = path.resolve(
   'dist'
 )
 
-fs.copySync(VUE_STORYBOOK_PATH, path.resolve(DOCS_ROOT, 'vue-storybook'))
+const DOCS_PATH_VUE_STORYBOOK = path.resolve(DOCS_ROOT, 'vue-storybook')
+fs.emptyDir(DOCS_PATH_VUE_STORYBOOK)
+fs.copySync(VUE_STORYBOOK_PATH, DOCS_PATH_VUE_STORYBOOK)
