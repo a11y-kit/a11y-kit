@@ -2,10 +2,13 @@
   "name": "@a11y-kit/a11y-kit",
   "version": "1.0.0",
   "description": "Collection of code to help create accessible websites",
-  "keywords": ["a11y", "vue"],
+  "keywords": [
+    "a11y",
+    "vue"
+  ],
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "assemble-docs": "node ./bin/assemble-docs.js"
   },
   "author": {
     "name": "Josh Stabback",
@@ -13,6 +16,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "fs-extra": "^8.1.0",
     "lerna": "^3.20.2"
   }
 }

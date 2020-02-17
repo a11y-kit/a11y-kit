@@ -4,8 +4,16 @@
   "description": "Accessible Tabs component for Vue",
   "keywords": [
     "a11y",
-    "vue"
+    "accessibility",
+    "vue",
+    "tabs",
+    "vue-tabs"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a11y-kit/a11y-kit.git",
+    "directory": "packages/vue-tabs"
+  },
   "license": "MIT",
   "author": "Josh Stabback <josh.stabback@gmail.com>",
   "main": "dist/vue-tabs.ssr.js",
