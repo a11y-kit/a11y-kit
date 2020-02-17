@@ -35,6 +35,9 @@
     "@storybook/addons": "^5.3.13",
     "@storybook/vue": "^5.3.13",
     "babel-loader": "^8.0.6",
-    "babel-preset-vue": "^2.0.2"
+    "babel-preset-vue": "^2.0.2",
+    "vue": "^2.6.11",
+    "vue-loader": "^15.9.0",
+    "vue-template-compiler": "^2.6.11"
   }
 }
