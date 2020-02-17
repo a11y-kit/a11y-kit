@@ -49,6 +49,8 @@ export default {
 </script>
 ```
 
+[More examples](https://a11y-kit.github.io/a11y-kit/vue-storybook)
+
 ## Styling
 
 The tab components are provided unstyled to allow you to theme without getting in the way.  The base tab functionality, including hiding and showing tabs, works using the HTML hidden attribute.
