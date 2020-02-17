@@ -23,7 +23,7 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build": "build-storybook -o ./dist"
+    "build": "build-storybook -o ./dist --quiet"
   },
   "dependencies": {
     "@a11y-kit/vue-tabs": "file:../../../packages/vue-tabs"
