@@ -57,5 +57,5 @@ export default {
 </script>
 ```
 
-[📖Full documentation](https://a11y-kit.com/packages/vue-tabs) | [More examples](https://a11y-kit.github.io/a11y-kit/vue-storybook)
+[📖Full documentation](https://a11y-kit.com/packages/vue-tabs) | [More examples](https://a11y-kit.com/vue-storybook/?path=/story/tabs--simplest-example)
 
