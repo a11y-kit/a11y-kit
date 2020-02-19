@@ -1,6 +1,14 @@
-# `@a11y-kit/vue-tabs`
+# @a11y-kit/vue-tabs
+
+![Badge displaying current bundle size](https://badgen.net/bundlephobia/minzip/@a11y-kit/vue-tabs)
+![Badge displaying current release](https://badgen.net/npm/v/@a11y-kit/vue-tabs)
+![Badge displaying current release](https://badgen.net/npm/dw/@a11y-kit/vue-tabs)
+![Badge displaying current release](https://badgen.net/npm/license/@a11y-kit/vue-tabs)
+![Badge displaying current release](https://badgen.net/npm/types/@a11y-kit/vue-tabs)
 
 A suite of *unstyled* components which can be used to build an accessible tabs interface.  The implementation is kept as close to the [WCAG example](https://www.w3.org/TR/wai-aria-practices/examples/tabs/tabs-2/tabs.html) as possible, while making it friendly to use in a Vue environment.
+
+[📖Full documentation](https://a11y-kit.com/packages/vue-tabs)
 
 ## Installation
 
@@ -49,28 +57,5 @@ export default {
 </script>
 ```
 
-[More examples](https://a11y-kit.github.io/a11y-kit/vue-storybook)
+[📖Full documentation](https://a11y-kit.com/packages/vue-tabs) | [More examples](https://a11y-kit.github.io/a11y-kit/vue-storybook)
 
-## Styling
-
-The tab components are provided unstyled to allow you to theme without getting in the way.  The base tab functionality, including hiding and showing tabs, works using the HTML hidden attribute.
-
-Each component provides a class which you can either style globally, or through a [deep selector](https://vue-loader.vuejs.org/guide/scoped-css.html#deep-selectors) per implementation.
-
-The available classes are:
-
-Component | Class
----|---
-TabActivator | `.ak-vt__activator`
-TabList | `.ak-vt__list`
-TabPanel | `.ak-vt__panel`
-TapWrapper | `.ak-vt__wrapper`
-
-## Accessibility Features
-
-- Activators (buttons) and panels are linked by `aria-controls` and `aria-labelledby`
-- Activators and panels have their appropriate `aria-role`s set
-- Activators support keyboard navigation (arrow keys + home / end)
-- Users can tab onto an activator and immediately into the associated tab
-- Tabs can be activated by click, automatically on focus, or manually by pressing enter / space
-- Non-active tabs are hidden natively

@@ -27,6 +27,12 @@ export default {
       default: ''
     },
 
+    autoActivate: {
+      type: Boolean,
+      required: false,
+      default: true
+    },
+
     orientation: {
       type: String,
       required: false,
@@ -38,12 +44,6 @@ export default {
       type: Boolean,
       required: false,
       default: false
-    },
-
-    autoActivate: {
-      type: Boolean,
-      required: false,
-      default: true
     },
 
     scope: {
