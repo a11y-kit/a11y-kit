@@ -1,6 +1,6 @@
 {
   "name": "@a11y-kit/vue-tabs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Accessible Tabs component for Vue",
   "keywords": [
     "a11y",
