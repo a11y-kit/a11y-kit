@@ -12,6 +12,7 @@
   },
   "main": "index.js",
   "scripts": {
+    "prepush": "lerna run test",
     "build-docs-site": "cd packages/a11y-kit.com && npm i && npm run build-docs-site"
   },
   "author": {

@@ -18,7 +18,8 @@ module.exports = {
         collapsable: false,
         sidebarDepth: 1,
         children: [
-          ['/packages/vue-tabs', 'vue-tabs']
+          ['/packages/utils', 'utils'],
+          ['/packages/vue-tabs', 'vue-tabs'],
         ]
       }
     ],
