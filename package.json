@@ -20,11 +20,10 @@
     "packages/*"
   ],
   "scripts": {
-    "build-docs-site": "yarn && yarn workspace @a11y-kit/a11y-kit.com build",
-    "dev:utils": "yarn workspace @a11y-kit/utils build:watch",
-    "dev:vue": "concurrently 'yarn dev:utils' 'yarn workspace @a11y-kit/a11y-kit.com dev:vue-storybook'",
+    "build": "lerna run --stream build",
+    "dev": "lerna run --parallel dev",
     "prepush": "yarn test",
-    "test": "lerna run test"
+    "test": "lerna run --parallel test"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",

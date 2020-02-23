@@ -1,3 +1,5 @@
+const foo = 'bar'
+
 import { TabActivator, TabList, TabPanel, TabWrapper } from '@a11y-kit/vue-tabs'
 
 export const SimplestExample = () => ({

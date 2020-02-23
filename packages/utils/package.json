@@ -29,7 +29,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "build:watch": "tsc -w",
+    "dev": "tsc -w",
     "test": "jest",
     "test:watch": "jest --watch",
     "prepublishOnly": "yarn test && yarn build"

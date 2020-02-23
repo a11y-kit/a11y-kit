@@ -18,8 +18,12 @@
     "build": "yarn build:vue-storybook && yarn build:vuepress",
     "build:vue-storybook": "build-storybook -c ./vue-storybook/.storybook -o ./vuepress/.vuepress/public/vue-storybook --quiet",
     "build:vuepress": "vuepress build vuepress --silent",
+    "dev": "yarn dev:vue-storybook",
     "dev:vue-storybook": "start-storybook -p 6006 -c ./vue-storybook/.storybook --quiet",
     "dev:vuepress": "vuepress dev vuepress"
+  },
+  "publishConfig": {
+    "access": "private"
   },
   "devDependencies": {
     "@a11y-kit/vue-tabs": "^1.0.0"
