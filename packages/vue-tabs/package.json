@@ -47,6 +47,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@a11y-kit/utils": "^1.0.0"
+    "@a11y-kit/utils": "^1.0.1"
   }
 }
