@@ -25,7 +25,7 @@ npm i @a11y-kit/utils
 ## Usage
 
 ```js
-import { orderNodes } from '@a11y-kit/utils`
+import { orderNodes } from '@a11y-kit/utils'
 ```
 
 [📖 Full documentation](https://a11y-kit.com/packages/utils)

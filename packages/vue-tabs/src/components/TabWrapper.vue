@@ -10,6 +10,7 @@
 </template>
 
 <script>
+import { orderNodes } from '@a11y-kit/utils'
 import { TabEventBus } from '../eventBus'
 
 export default {
@@ -194,23 +195,13 @@ export default {
     // Activator management
     // =====================================================
     sortActivators() {
-      this.activators.sort((a, b) => {
-        if (
-          a.ref.compareDocumentPosition(b.ref) &
-          Node.DOCUMENT_POSITION_FOLLOWING
-        ) {
-          return -1
-        }
+      const refs = this.activators.map(activator => activator.ref)
 
-        if (
-          a.ref.compareDocumentPosition(b.ref) &
-          Node.DOCUMENT_POSITION_PRECEDING
-        ) {
-          return 1
-        }
+      refs.sort(orderNodes)
 
-        return 0
-      })
+      this.activators = refs.map(ref =>
+        this.activators.find(activator => activator.ref === ref)
+      )
     },
 
     removeActivator(tab) {

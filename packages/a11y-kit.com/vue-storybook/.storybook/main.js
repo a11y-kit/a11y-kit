@@ -6,8 +6,8 @@ module.exports = {
       name: '@storybook/addon-storysource',
       options: {
         rule: {
-          // Look for all .js files as .stories files are split out
-          test: [/\.jsx?$/]
+          // Stories should be kept in their own file
+          test: [/story\.jsx?$/]
         },
       },
     },

@@ -33,7 +33,7 @@ import { orderNodes } from '@a11y-kit/utils`
 Orders an array of Nodes by document position.  Used when handling many nodes and you want to make sure you are interacting with them in the correct order.
 
 ```js
-import { orderNodes } from '@a11y-kit/utils`
+import { orderNodes } from '@a11y-kit/utils'
 
 const foo = document.getElementById('foo')
 const bar = document.getElementById('bar')
