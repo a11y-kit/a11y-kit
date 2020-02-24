@@ -82,6 +82,7 @@ export default {
     },
 
     onClick() {
+      this.$refs.button.focus()
       this.busEmit('click')
     },
 

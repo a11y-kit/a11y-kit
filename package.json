@@ -23,7 +23,8 @@
     "build": "lerna run --stream build",
     "dev": "lerna run --parallel dev",
     "prepush": "yarn test",
-    "test": "lerna run --parallel test"
+    "test": "lerna run --parallel test",
+    "test:dist": "jest"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",

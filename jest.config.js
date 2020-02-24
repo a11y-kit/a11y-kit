@@ -3,5 +3,8 @@
 
 module.exports = {
   // Automatically clear mock calls and instances between every test
-  clearMocks: true
+  clearMocks: true,
+
+  // The glob patterns Jest uses to detect test files
+  testMatch: ['<rootDir>/__tests__/*.spec.[jt]s']
 }
