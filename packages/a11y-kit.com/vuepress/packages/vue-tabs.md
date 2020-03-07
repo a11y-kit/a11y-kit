@@ -124,7 +124,7 @@ Prop | Type | Description
 The tab components are provided unstyled to allow you to theme without getting in the way.  The base tab functionality, including hiding and showing tabs, works using the HTML hidden attribute.
 
 ::: tip
-We have some pre-built rudimentary styles availble, which mostly add structure to the components.  Just add the following line to your `main.js` (or other entry file) to use:
+We have some pre-built rudimentary styles available, which mostly add structure to the components.  Just add the following line to your `main.js` (or other entry file) to use:
 
 ```js
 import '@a11y-kit/vue-tabs/styles/simple.css'
