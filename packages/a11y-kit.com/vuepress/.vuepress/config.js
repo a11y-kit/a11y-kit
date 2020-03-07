@@ -9,7 +9,19 @@ module.exports = {
         path: '/',
         collapsable: false,
         children: [
-          '/about',
+          '/about'
+        ]
+      },
+      {
+        title: 'Contributing',
+        collapsable: false,
+        children: [
+          ['/contributing/', 'Introduction'],
+          ['/contributing/installation', 'Installation'],
+          ['/contributing/understanding', 'Understanding'],
+          ['/contributing/developing', 'Developing'],
+          ['/contributing/testing', 'Testing'],
+          ['/contributing/contributors', 'Contributors']
         ]
       },
       {
